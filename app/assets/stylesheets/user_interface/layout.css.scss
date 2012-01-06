@@ -1,0 +1,291 @@
+html {color:#000;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,b,i,th,var {font-style:normal;font-weight:normal;}
+li {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select {font-family:inherit;font-size:inherit;font-weight:inherit;}
+input,textarea,select {*font-size:100%;}
+legend {color:#000;}
+a { text-decoration: none; color: #000 }
+
+/* Dryade theme */
+/* $header_background: #f3f0db; */
+/* $header_color: black; */
+/* $tabs_background: #740a0a; */
+/* $tabs_color: white; */
+
+/* Red theme */
+$header_background: #900;
+$header_color: white;
+$tabs_background: #C00;
+$tabs_color: white;
+
+$text_color: #222;
+
+body {
+    font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+    color: $text_color;
+    font-size: 14px;
+    background: #E5E5E5;
+}
+
+a, a:visited {
+    color: $text_color;
+}
+
+#header {
+    background: $header_background;
+
+    .tabs {
+        height: 26px;
+        margin: 0 30px 0 30px;
+
+        li {
+            display: inline;
+            float: left;
+            line-height: 24px;
+
+            a:link, a:visited {
+                font-size: 12px;
+                padding: 5px 9px 7px;
+                margin-right: 3px;
+                background-color: $tabs_background;
+                color: $tabs_color;
+            }
+
+            a.current {
+                color: $text_color;
+                font-weight: bold;
+                background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#E5E5E5));
+                background: -moz-linear-gradient(top, #FDFDFD, #E5E5E5);
+            }           
+        }
+
+        li.admin {
+            float: right;
+        }
+    }
+
+    .infos{
+        height: 70px;
+
+        h1 {        
+            font-size: 20px;
+            font-weight: normal;
+            color: $header_color;
+            padding: 10px 0 0 30px;
+        }
+
+        h1.dashboard {
+            font-size: 24px;
+            padding-top: 20px;
+        }
+
+        a.back_to_upper_menu { 
+	 	        color: $tabs_color; 
+	 	        text-decoration: underline; 
+	 	        padding: 10px 0 0 30px; 
+	 	        font-size: 0.8em; 
+            display: block;
+        } 
+        
+        ul.user {
+            float: right;
+            color: $tabs_color;
+            margin: 0 30px 0 0;
+            
+            li {
+                font-size: 13px;
+                display: inline;
+                margin: 0 3px;
+            }
+            
+            a {
+                color: $tabs_color;
+                text-decoration: underline;
+                line-height: 55px;              
+            }         
+
+            li.language, li.home {
+                margin: 0 1px;
+                text-decoration: none;           
+            }
+            
+            span.help {
+                color: $header_background;
+                font-size: 11px;
+                border-radius:6px;
+                -moz-border-radius: 6px;
+                background-color: white;
+                padding: 3px 5px;
+            }    
+        }
+    }
+}
+
+.actions {
+    a {
+        padding-left: 20px;
+        text-decoration: underline;
+    }
+
+    a.visit_site{
+        background: url("../images/icons/site.png") no-repeat;
+    }
+
+    a.visit_event{
+        background: url("../images/icons/event.png") no-repeat;
+    }
+
+    a.visit_page{
+        background: url("../images/icons/page.png") no-repeat;
+    }
+    
+    a.add {
+        background: url("../images/icons/add.png") no-repeat;
+    }
+    a.edit {
+        background: url("../images/icons/edit.png") no-repeat;
+    }
+    a.remove {
+        background: url("../images/icons/remove.png") no-repeat;
+    }
+    li {
+        margin: 10px 0;
+    }
+}
+
+#body {
+    min-width: 1000px;
+    
+    a{ text-decoration: underline;}
+}
+
+#workspace, #sidebar {
+    float: left;
+}
+
+#workspace {
+    width: 70%;
+    background: white;
+    margin: 15px 30px;
+    padding: 0 15px 10px 15px;
+    
+    -moz-box-shadow: 3px 3px 4px #BBB;
+    -webkit-box-shadow: 3px 3px 4px #BBB;
+    box-shadow: 3px 3px 4px #BBB;
+    border-right: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
+
+    h2,h3 {
+        background: white;
+        padding: 15px 0;
+        font-weight: bold;
+    }
+
+    h2{font-size: 16px;}
+    h3{font-size: 14px;}
+
+    li span.author {
+        float: right;
+        font-size: 12px;
+    }
+
+    .site_summary {
+      float: left;
+      margin-bottom: 20px;
+      width: 100%;
+     
+      img {
+          float: left;
+          margin-right: 20px;
+      }
+      a {
+          display: block;
+          margin: 25px 0 0;
+      }
+    }
+    .site_summary:after {
+        content: " ";  
+        display: block; 
+        height: 0; 
+        clear: both;
+        visibility: hidden;
+    }
+
+    p { margin: 7px 0; }
+
+    fieldset.buttons{
+        margin: 10px;
+    }
+        
+}
+
+#body #flash {
+    width: 72%;
+    margin: 15px 0 0 30px;
+
+    div {
+        padding: 10px 10px 10px 50px;
+    }
+    .alert {
+        color: #c01100; 
+        background: #ffbdbd url("../images/icons/alert.png") no-repeat 15px;
+    }
+    .notice {
+        background: #EDF3FE url("../images/icons/notice.png") no-repeat 15px;
+    }
+}
+
+#body #sidebar {
+    width: 20%;
+    padding-top: 20px;
+    
+    a {
+        color: #666;
+    }
+    
+    .actions {
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        padding: 6px 8px;
+        font-weight: bold;
+        background: #F0F0F0;
+        border-bottom: 1px solid gainsboro;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    fieldset
+    {
+        background-color: #ECECEC;
+        padding: 10px;
+        border: 1px solid black;
+
+        legend{
+            font-weight: bold;
+            padding: 0 5px;
+        }
+        
+        p{
+            margin-top: 5px;            
+            label{ font-size: 12px;} 
+            span{
+                font-style: oblique;
+                font-size:12px;
+            }
+        }
+    }
+}

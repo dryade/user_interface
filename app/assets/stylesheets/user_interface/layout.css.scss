@@ -137,25 +137,25 @@ a, a:visited {
     }
 
     a.visit_site{
-        background: url(image-path('ui/site.png')) no-repeat;
+        background: url(image-path('user_interface/ui/site.png')) no-repeat;
     }
 
     a.visit_event{
-        background: url(image-path('ui/event.png')) no-repeat;
+        background: url(image-path('user_interface/ui/event.png')) no-repeat;
     }
 
     a.visit_page{
-        background: url(image-path('ui/page.png')) no-repeat;
+        background: url(image-path('user_interface/ui/page.png')) no-repeat;
     }
     
     a.add {
-        background: url(image-path('ui/add.png')) no-repeat;
+        background: url(image-path('user_interface/ui/add.png')) no-repeat;
     }
     a.edit {
-        background: url(image-path('ui/edit.png')) no-repeat;
+        background: url(image-path('user_interface/ui/edit.png')) no-repeat;
     }
     a.remove {
-        background: url(image-path('ui/remove.png')) no-repeat;
+        background: url(image-path('user_interface/ui/remove.png')) no-repeat;
     }
     li {
         margin: 10px 0;
@@ -237,10 +237,10 @@ a, a:visited {
     }
     .alert {
         color: #c01100; 
-        background: #ffbdbd url(image-path('ui/alert.png')) no-repeat 15px;
+        background: #ffbdbd url(image-path('user_interface/ui/alert.png')) no-repeat 15px;
     }
     .notice {
-        background: #EDF3FE url(image-path('ui/notice.png')) no-repeat 15px;
+        background: #EDF3FE url(image-path('user_interface/ui/notice.png')) no-repeat 15px;
     }
 }
 

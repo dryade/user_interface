@@ -6,6 +6,12 @@ module UserInterface
         require 'user_interface/language_support'
         include UserInterface::LanguageSupport
       end
+
+      config.to_prepare do
+        # To use our devise views instead of original ones
+        ApplicationController.prepend_view_path File.expand_path("../../../app/views", __FILE__)
+        ActionMailer::Base.prepend_view_path File.expand_path("../../../app/views", __FILE__)
+      end
     end
 
   end

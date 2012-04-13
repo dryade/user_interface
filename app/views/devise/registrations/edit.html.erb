@@ -1,0 +1,25 @@
+<%= title_tag t('.title') %>
+
+<%= semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |form| %>
+  <%= form.inputs do %> 
+    <%= form.input :email %> 
+    <%= form.input :password, :as => :password %> 
+    <%= form.input :password_confirmation, :as => :password %> 
+
+    <%= form.input :current_password, :as => :password %>
+  <% end %>  
+
+  <%= form.buttons do %>
+    <%= form.commit_button :label => t('.commit') %>
+    <%= t('or') %>
+     <%= link_to t('back'), :back %>
+  <% end %>
+<% end %>
+
+<% content_for :sidebar do %>
+<ul class="actions">
+  <%= link_to t('.actions.destroy'), registration_path(resource_name), :confirm => t('.actions.destroy_confirm'), :method => :delete, :class => "remove" %>
+</ul>
+<% end %>
+
+

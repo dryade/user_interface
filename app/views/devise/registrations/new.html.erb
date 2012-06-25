@@ -7,10 +7,9 @@
     <%= form.input :password_confirmation, :as => :password %> 
   <% end %>  
 
-  <%= form.buttons do %>
-    <%= form.commit_button :label => t('.commit') %>
-    <%= t('or') %>
-     <%= link_to t('back'), :back %>
+   <%= form.actions do %>
+     <%= form.action :submit, :as => :button, :label => t('.commit') %>
+     <%= form.action :cancel, :as => :link %>
   <% end %>
 <% end %>
 

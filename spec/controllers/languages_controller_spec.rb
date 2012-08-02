@@ -25,6 +25,7 @@ describe LanguagesController do
 
   before(:each) do
     request.env["HTTP_REFERER"] = '/'
+    subject.stub!(:root_path).and_return("/")
   end
   # I18n should be reset for following views spec
   after(:each) do

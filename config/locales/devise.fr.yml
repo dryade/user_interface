@@ -40,7 +40,7 @@ fr:
       send_instructions: 'Vous allez recevoir les instructions nécessaires à la confirmation de votre compte dans quelques minutes'
       confirmed: 'Votre compte a été validé, vous êtes maintenant connecté'
     registrations:
-      signed_up: 'Bienvenu, vous êtes connecté'
+      signed_up: 'Bienvenue, vous êtes connecté'
       edit: "Editer %{resourcename}"
       leave_blank: "laissez vide si vous ne désirez pas le changer"
       current_password_label: "Nous avons besoin de votre mot de passe actuel pour confirmer les changements"

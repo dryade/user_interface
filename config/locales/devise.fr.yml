@@ -76,3 +76,11 @@ fr:
         subject: "Instructions pour changer le mot de passe"
       unlock_instructions:
         subject: "Instructions pour déverrouiller le compte"
+    invitations:
+      send_instructions: 'Une invitation a été envoyée par mail à %{email}.'
+      invitation_token_invalid: "Le token de l'invitation n'est pas vaide!"
+      updated: 'Mot de passe mis à jour avec succès. Vous êtes maintenant connecté.'
+      no_invitations_remaining: "Aucune invitation restante"
+      edit:
+        submit_button: 'Valider'
+        header: 'Mise à jour du mot de passe'

@@ -1,4 +1,5 @@
 class LanguagesController < ApplicationController
+  skip_filter :authenticate_user!
 
   def show
     change_language

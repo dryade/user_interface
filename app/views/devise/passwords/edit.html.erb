@@ -8,9 +8,10 @@
     <%= f.input :password_confirmation, :as => :password %>
   <% end %>
 
-  <%= f.buttons do %>
-    <%= f.commit_button :label => t('.commit') %>
-  <% end %>
+   <%= f.actions do %>
+     <%= f.action :submit, :as => :button, :label => t('.commit') %> 
+     <%= f.action :cancel, :as => :link %>
+   <% end %>
 <% end %>
 
 <%= render "links" %>

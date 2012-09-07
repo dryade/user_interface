@@ -6,4 +6,9 @@ test/dummy/log/*.log
 test/dummy/tmp/*~
 *~
 
+# for vim users
+*.swp
+*.swo
+.DS_Store
+
 *~

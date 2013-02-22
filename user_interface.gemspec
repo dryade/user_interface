@@ -7,20 +7,18 @@ require "user_interface/version"
 Gem::Specification.new do |s|
   s.name        = "user_interface"
   s.version     = UserInterface::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of UserInterface."
-  s.description = "TODO: Description of UserInterface."
+  s.authors     = ["Marc Florisson", "Luc Donnet", "Alban Peignier"]
+  s.email       = ["mflorisson@cityway.fr", "ldonnet@cityway.fr", "alban@tryphon.eu"]      
+  s.homepage    = "https://github.com/dryade/user-interface.git"
+  s.summary     = "User Interface for all our web site."
+  s.description = "User Interface for all our web site."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "> 3.1.0"
-  # s.add_dependency "jquery-rails"
 
   s.add_development_dependency "sqlite3"
-
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "capybara"
 end

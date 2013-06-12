@@ -13,4 +13,9 @@ matrix:
       jdk: openjdk7
     - rvm:  1.8.7
       jdk: oraclejdk7
-script: "rake spec"
+script: "bundle exec rspec"
+notifications:
+  recipients:
+    - mflorisson@gmail.com
+    - ldonnet@cityway.fr
+    - metienne@cityway.fr

@@ -175,6 +175,9 @@ a, a:visited {
     a.remove {
         background: url(image-path('user_interface/ui/remove.png')) no-repeat;
     }
+    a.download {
+        background: url(image-path('user_interface/ui/download.png')) no-repeat;
+    }
     a.export {
         background: url(image-path('user_interface/ui/export.png')) no-repeat;
     }

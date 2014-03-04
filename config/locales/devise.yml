@@ -1,6 +1,6 @@
 en:
   devise:
-    sessions: 
+    sessions:
       new:
         title: Sign in
         commit: Sign in
@@ -31,13 +31,21 @@ en:
       sign_up: "Sign up"
       new_password: Forget your password ?
       new_confirmation: "Didn't receive confirmation instructions?"
+  helpers:
+    label:
+      user:
+        name: Full name
+        password: Password
+        password_confirmation: Password confirmation
+        current_password: Current password
+        remember_me: Remember me
 fr:
   activerecord:
     attributes:
       user:
         password: Mot de passe
   devise:
-    sessions: 
+    sessions:
       new:
         title: Se connecter
         commit: Se connecter
@@ -76,4 +84,4 @@ fr:
         password_confirmation: Confirmation du mot de passe
         current_password: Mot de passe actuel
         remember_me: Se souvenir de moi
-          
+
